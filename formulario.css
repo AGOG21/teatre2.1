@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+nav {
+    background-color: rgba(152, 236, 187, 0.801);
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 20px; /* Añadido para separar el menú del contenido */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: rgba(120, 200, 120, 0.3);
+    border-radius: 4px;
+}
+.container {
+    display:flex;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+
+form {
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    width: 100%;
+}
+form h1 {
+    color: rgb(25, 90, 23);
+    margin-bottom: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: rgb(25, 90, 23);
+}
+form input[type="text"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="checkbox"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-items:end;
+}
+form input[type="submit"] {
+    background-color: rgb(25, 90, 23);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+form input[type="submit"]:hover {
+    background-color: rgb(21, 82, 21);
+}

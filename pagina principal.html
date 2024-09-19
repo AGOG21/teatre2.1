@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEATRO</title>
+    <link rel="stylesheet" href="pagina principal.css">
+    <link rel="stylesheet" type="text/css" href="pagina principal.css">
+</head>
+<body>
+    <h1> TEATRO</h1>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="docente.html" target="_blank">DOCENTE</a></li>
+                <li><a href="objetivo principal.html" target="_blank">OBJETIVO PRINCIPAL</a></li>
+                <li><a href="formulario.html" target="_blank">FORMULARIO</a></li>
+                <li><a href="horarios.html" target="_blank">HORARIOS</a></li>
+            </ul>
+        </nav> 
+    </div>
+    <div class="contenido">
+        <div class="seccion"> 
+            <div>
+                <h2>TE INVITO A UNIRTE A NUESTRO SEMILLERO DE TEATRO</h2>
+                <br>
+                <p> El teatro es una herramienta fundamental para el desarrollo integral de todos los estudiantes, en el teatro no solo se aprende a actuar,
+                    si no también a ser un humano excelente, creamos y viajamos a mundos diferentes, fantasías, pero también hablamos de la realidad.
+                    El teatro es una herramienta que nos permite interactuar en un entorno social, que nos permite conocer nuestro cuerpo, voz y capacidades,
+                    a comunicarnos y a expresar lo que no podemos expresar en ciertos lugares. 
+                    eso es el teatro, amor, vida, el teatro lo es todo.
+                </p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFqLawT7r_FG7Uf57lBoM2JDUz6gLsQ98zg&s">
+        </div>
+        <div class="informacion"> 
+            <a>NOMBRE:
+                <P>Orlando Garcia Linares</P>
+            </a>
+            <a>TELEFONO:
+                <P> 310 2927603</P>
+            </a>
+            <a style="text-decoration: dashed;"> CORREO:
+                <p>Orlando.Garcia@comfenalcoibague.edu.co </p>
+            </a>
+        </div>
+    </div>
+    <center>
+        <div id="carrusel" class="carrusel">
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 1.jpg" alt="Imagen 1">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 2.jpg" alt="Imagen 2">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 3.jpg" alt="Imagen 3">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 4.jpeg" alt="Imagen 4">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 5.jpg" alt="Imagen 5">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 6.jpg" alt="Imagen 6">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 7.jpeg" alt="Imagen 7">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 8.jpg" alt="Imagen 8">
+            </div>
+            <div class="itemCarrusel">
+                <img src="/imagenes/pagina principal 9.jpg" alt="Imagen 9">
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
+    
+            <div class="flechascarrusel">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+        <!-- Indicadores de progreso -->
+        <div class="indicadores">
+           
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                
+        </div>
+    
+        <script>
+          let index = 0;
+          const items = document.querySelectorAll('.itemCarrusel');
+          const dots = document.querySelectorAll('.dot');
+          const totalItems = items.length;
+    
+          function showItem(n) {
+            items.forEach((item, i) => {
+              item.style.display = i === n ? 'block' : 'none';
+              dots[i].classList.toggle('active', i === n);
+            });
+          }
+    
+          function nextSlide() {
+            index = (index + 1) % totalItems;
+            showItem(index);
+          }
+    
+          function prevSlide() {
+            index = (index - 1 + totalItems) % totalItems;
+            showItem(index);
+          }
+    
+          document.querySelector('.next').addEventListener('click', nextSlide);
+          document.querySelector('.prev').addEventListener('click', prevSlide);
+    
+          showItem(index);
+          setInterval(nextSlide, 5000); // Cambiar imagen cada 5 segundos
+        </script>
+    </body>
+    </html>
+
+
+    
+        
+       

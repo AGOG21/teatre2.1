@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: rgb(25, 90, 23);
+    color: beige;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+.container {
+    display: flex;
+    flex: 1;
+}
+nav {
+    width: 200px;
+    background-color: rgba(152, 236, 187, 0.801);
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 80px; /* Espacio para el título */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    display: block;
+    font-size: 120%;
+}
+nav a:hover {
+    color: rgb(21, 82, 21);
+    background-color: rgba(120, 200, 120, 0.3);
+}
+.main-content {
+    margin-left: 200px; /* Deja espacio para el menú lateral */
+    padding: 20px;
+    flex: 1;
+}
+.objetivo {
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.objetivo h2 {
+    margin-bottom: 20px;
+    color: rgb(25, 90, 23);
+}
+.objetivo p {
+    line-height: 1.6;
+    color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+  
+  .menu nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .menu nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .menu nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .contenido {
+    text-align: center;
+    padding: 70px;
+  }
+  
+  .seccion h2 {
+    font-size: 1.8em;
+    color: #333;
+  }
+  
+  .seccion img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .carrusel {
+    position: relative;
+    max-width: 680px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .itemCarrusel {
+    display: none;
+  }
+  
+  .itemCarrusel img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  /* Indicadores del carrusel */
+  .indicadores {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .indicadores span {
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .active {
+    background-color: #333;
+  }
+  
+  /* Flechas de navegación */
+  .flechascarrusel {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .flechascarrusel button {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    pointer-events: auto;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .flechascarrusel .prev {
+    left: 10px;
+  }
+  
+  .flechascarrusel .next {
+    right: 10px;
+  }
+  
+  .flechascarrusel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .informacion p {
+    font-size: 1em;
+  }
+  
+  /* Carrusel */
+  .carrusel {
+    width: 80%; /* Puedes aumentar este porcentaje según el tamaño deseado */
+    max-width: 800px; /* Limitar el ancho máximo para que no se haga demasiado grande */
+    height: 500px; /* Aumenta la altura del carrusel */
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px; /* Un toque redondeado en las esquinas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Agrega sombra para hacerlo más profesional */
+  }
+  
+  /* Ajusta el tamaño de las imágenes */
+  .carrusel img {
+    width: 100%;
+    height: 100%; /* Asegura que las imágenes ocupen todo el carrusel */
+    object-fit: cover; /* Para que las imágenes se ajusten bien sin deformarse */
+  }
+  
+  /* Botones del carrusel */
+  .flechascarrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Botones semi-transparentes */
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .flechascarrusel .prev {
+    left: 10px; /* Ajusta la posición de la flecha izquierda */
+  }
+  
+  .flechascarrusel .next {
+    right: 10px; /* Ajusta la posición de la flecha derecha */
+  }
+  
+  .flechascarrusel button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Oscurece el fondo al pasar sobre los botones */
+  }

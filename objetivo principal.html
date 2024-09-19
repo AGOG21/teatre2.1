@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETIVO PRINCIPAL</title>
+    <link rel="stylesheet" href="objetivo principal.css">
+</head>
+<body>
+    <header>
+        <h1>OBJETIVO PRINCIPAL</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="pagina principal.html">PAGINA PRINCIPAL</a></li>
+                <li><a href="docente.html">DOCENTE</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="objetivo">
+                <h2>Objetivo Principal</h2>
+                <p>
+                    El objetivo principal de este proyecto es fomentar la creatividad y la expresión artística a través del teatro, proporcionando un espacio inclusivo donde los participantes puedan explorar diferentes técnicas de actuación, dirección y producción. Buscamos empoderar a los individuos para que se conecten con su lado artístico, desarrollen habilidades comunicativas y colaborativas, y contribuyan a una comunidad más vibrante y culturalmente rica.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="carrusel" class="carrusel">
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 1.jpg" alt="Imagen 1">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 2.jpg" alt="Imagen 2">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 3.jpeg" alt="Imagen 3">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 4.jpg" alt="Imagen 4">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 6.jpeg" alt="Imagen 6">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 7.jpeg" alt="Imagen 7">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 8.jpeg" alt="Imagen 8">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 9.jpg" alt="Imagen 9">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 10.jpeg" alt="Imagen 10">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 11.jpg" alt="Imagen 11">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 13.jpg" alt="Imagen 13">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 14.jpg" alt="Imagen 14">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 15.jpg" alt="Imagen 15">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 16.jpg" alt="Imagen 16">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 17.jpg" alt="Imagen 17">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 18.jpg" alt="Imagen 18">
+        </div>
+        <div class="itemCarrusel">
+            <img src="/imagenes/objetivo 20.jpg" alt="Imagen 20">
+        </div>
+        <!-- Agrega más imágenes según sea necesario -->
+
+        <div class="flechascarrusel">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+    <!-- Indicadores de progreso -->
+    <div class="indicadores">
+       
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            
+    </div>
+
+    <script>
+      let index = 0;
+      const items = document.querySelectorAll('.itemCarrusel');
+      const dots = document.querySelectorAll('.dot');
+      const totalItems = items.length;
+
+      function showItem(n) {
+        items.forEach((item, i) => {
+          item.style.display = i === n ? 'block' : 'none';
+          dots[i].classList.toggle('active', i === n);
+        });
+      }
+
+      function nextSlide() {
+        index = (index + 1) % totalItems;
+        showItem(index);
+      }
+
+      function prevSlide() {
+        index = (index - 1 + totalItems) % totalItems;
+        showItem(index);
+      }
+
+      document.querySelector('.next').addEventListener('click', nextSlide);
+      document.querySelector('.prev').addEventListener('click', prevSlide);
+
+      showItem(index);
+      setInterval(nextSlide, 5000); // Cambiar imagen cada 5 segundos
+    </script>
+</body>
+</html>
+

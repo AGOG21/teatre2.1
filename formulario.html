@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación superior -->
+    <nav>
+        <ul>
+            <li><a href="pagina principal.html">Pagina Principal</a></li>
+            <li><a href="docente.html">Docente</a></li>
+            <li><a href="objetivo principal.html">Objetivo Principal</a></li>
+            <li><a href="horarios.html" target="_blank">HORARIOS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor del formulario -->
+    <div class="container">
+        <!-- Formulario de Información de Estudiantes -->
+        <form action="https://formsubmit.co/valeriaalvarezlopez9@gmail.com" method="post"> 
+            <h1>Información Estudiantes</h1>
+            <label for="name_estudiante">Nombre</label>
+            <input type="text" id="name_estudiante" name="name_estudiante" required>
+
+            <label for="lastname_estudiante">Apellido</label>
+            <input type="text" id="lastname_estudiante" name="lastname_estudiante" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="identificacion">Número de Identidad</label>
+            <input type="text" id="identificacion" name="identificacion" required>
+
+            <label for="curso">Grado</label>
+            <input type="text" id="curso" name="curso" required>
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" required>
+         <div container>
+            <label for="seguro">Tengo seguro estudiantil</label> 
+             <input type="checkbox" id="seguro" name="seguro">  
+        </form>
+
+        <!-- Formulario de Información de Padres -->
+        <form action="https://formsubmit.co/valeriaalvarezlopez9@gmail.com" method="post">
+            <h1>Información de Padres</h1>
+            <label for="name_padre">Nombre</label>
+            <input type="text" id="name_padre" name="name_padre" required>
+
+            <label for="lastname_padre">Apellido</label>
+            <input type="text" id="lastname_padre" name="lastname_padre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

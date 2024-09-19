@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios Teatro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            min-height: 100vh;
+        }
+        nav {
+            width: 200px;
+            background-color: rgba(152, 236, 187, 0.8);
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            display: block;
+            font-size: 16px;
+        }
+        nav a:hover {
+            background-color: rgba(120, 200, 120, 0.5);
+            color: white;
+        }
+        h1 {
+            background-color: rgb(25, 90, 23);
+            color: beige;
+            padding: 20px;
+            text-align: center;
+            margin-left: 200px;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 200px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: rgb(25, 90, 23);
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(152, 236, 187, 0.3);
+        }
+        p {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="pagina principal.html">PAGINA PRINCIPAL</a></li>
+            <li><a href="docente.html">DOCENTE</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-content">
+        <h1>Horarios Teatro</h1>
+        <p>Estos son los horarios establecidos, pero, si esta mejor dispiscion en otro horario, ¡Puede asistir!, lo importante es hacer Teatro.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Grupos</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>Transición, Primero y Segundo</td>
+                    <td>2:30 pm - 4:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>Noveno, Décimo y Once</td>
+                    <td>3:30 pm - 5:30 pm</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>Sexto</td>
+                    <td>2:30 pm - 5:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>Cuarto</td>
+                    <td>2:30 pm - 4:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>Séptimo</td>
+                    <td>4:00 pm - 5:30 pm</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>Quinto</td>
+                    <td>2:30 pm - 4:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>Octavos</td>
+                    <td>4:00 pm - 5:30 pm</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
